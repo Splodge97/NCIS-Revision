@@ -1,0 +1,279 @@
+<HTML>
+    <head>
+        <title> NCIS Revision </title>
+    <style>
+        .button {
+        background-color:#00264d;
+        padding:10px 30px;
+        border:5px solid #00264d;
+        color:#ffffff;
+        font-size:30px;
+        font-family:Georgia }
+        .button:hover{
+            background-color:#ffffff;
+            color:#00264d }
+        </style>
+    </head>
+    <body>
+        <img src="ncislearn.jpg" width=500><br>
+        <textarea id=box cols=30 rows=6 style="background-color:#00264d; font-size:30px; font-family:Georgia; color:#ffffff" wrap="hard" onfocus="this.value=''">
+        </textarea><button id=press class="button" onclick="play()"></button><br>
+        <button id=restart style="color:DimGrey" onclick="Restart()">Restart</button>
+        <script>
+        var Score = 0;
+        var Rule = Math.floor(Math.random()*28)+1;
+        var Qtype = Math.floor(Math.round( (Math.random() ) ) );
+        press.innerHTML=Score
+        if(Rule==1){
+            var No = 1
+            var Num = "one"
+            var Words = "Never screw over your partner."}
+        else if(Rule==2){
+            var No = 2
+            var Num = "two"
+            var Words = "Always wear gloves at a crime scene."}
+        else if(Rule==3){
+            var No = 3
+            var Num = "three"
+            var Words = "Never be unreachable."}
+        else if(Rule==4){
+            var No = 4
+            var Num = "four"
+            var Words = "The best way to keep a secret? Keep it to yourself. Second best? Tell one other person – if you must. There is no third best."}
+        else if(Rule==5){
+            var No = 5
+            var Num = "five"
+            var Words = "You don't waste good."}
+        else if(Rule==6){
+            var No = 6
+            var Num = "six"
+            var Words = "Never apologize – It’s a sign of weakness. Expect among friends."}
+        else if(Rule==7){
+            var No = 7
+            var Num = "seven"
+            var Words = "Always be specific when you lie."}
+        else if(Rule==8){
+            var No = 8
+            var Num = "eight"
+            var Words = "Never take anything for granted."}
+        else if(Rule==9){
+            var No = 9
+            var Num = "nine"
+            var Words = "Never go anywhere without a knife."}
+        else if(Rule==10){
+            var No = 10
+            var Num = "ten"
+            var Words = "Never get personally involved in a case."}
+        else if(Rule==11){
+            var No = 11
+            var Num = "eleven"
+            var Words = "When the job is done, walk away."}
+        else if(Rule==12){
+            var No = 12
+            var Num = "twelve"
+            var Words = "Never date a co-worker."}
+        else if(Rule==13){
+            var No = 13
+            var Num = "thriteen"
+            var Words = "Never, ever involve a lawyer."}
+        else if(Rule==14){
+            var No = 14
+            var Num = "fourteen"
+            var Words = "Bend the line, don’t break it."}
+        else if(Rule==15){
+            var No = 15
+            var Num = "fifteen"
+            var Words = "Always work as a team."}
+        else if(Rule==16){
+            var No = 16
+            var Num = "sixteen"
+            var Words = "If someone thinks they have the upper-hand…break it!"}
+        else if(Rule==17){
+            var No = 18
+            var Num = "eighteen"
+            var Words = "It’s easier to seek forgiveness than ask permission."}
+        else if(Rule==18){
+            var No = 22
+            var Num = "twenty two"
+            var Words = "Never, ever bother Gibbs in interrogation."}
+        else if(Rule==19){
+            var No = 23
+            var Num = "twenty three"
+            var Words = "Never mess with a Marine’s coffee if you want to live."}
+        else if(Rule==20){
+            var No = 27
+            var Num = "twenty seven"
+            var Words = "Two ways to follow: First way, they never notice you – Second way, they only notice you."}
+        else if(Rule==21){
+            var No = 35
+            var Num = "thirty five"
+            var Words = "Always watch the watchers."}
+        else if(Rule==22){
+            var No = 36
+            var Num = "thirty six"
+            var Words = "If you feel like you’re being played, you probably are."}
+        else if(Rule==23){
+            var No = 38
+            var Num = "thirty eight"
+            var Words = "Your case, your lead."}
+        else if(Rule==24){
+            var No = 39
+            var Num = "thirty nine"
+            var Words = "There is no such thing as coincidence."}
+        else if(Rule==25){
+            var No = 40
+            var Num = "fourty"
+            var Words = "If it seems someone is out to get you, they are."}
+        else if(Rule==26){
+            var No = 44
+            var Num = "fourty four"
+            var Words = "First things first. Hide the women and children."}
+        else if(Rule==27){
+            var No = 45
+            var Num = "fourty five"
+            var Words = "Clean up your own mess."}
+        else if(Rule==28){
+            var No = 51
+            var Num = "fifty one"
+            var Words = "Sometimes - You're Wrong"}
+    if(Qtype==1){
+        box.innerHTML= "What is Rule "+No+"?"}
+    else{box.innerHTML="Which Rule is '"+Words+"'?"}
+    function play(){
+        if(Qtype==1){
+            if(box.innerHTML==Words){
+                box.innerHTML="Correct"
+                Score=Score+1} 
+            else{box.innerHTML="No it's '"+Words+"'."} }
+        else{
+            if(box.innerHTML==No||box.innerHTML==Num){
+                box.innerHTML="Correct"
+                Score=Score+1}
+            else(box.innerHTML="No it's "+No+".") } setTimeout(Go,2000) }
+    function Go(){
+        Rule = Math.floor(Math.random()*28)+1;
+        Qtype = Math.floor(Math.round( (Math.random() ) ) );
+        press.innerHTML=Score
+        if(Rule==1){
+             No = 1
+             Num = "one"
+             Words = "Never screw over your partner."}
+        else if(Rule==2){
+             No = 2
+             Num = "two"
+             Words = "Always wear gloves at a crime scene."}
+        else if(Rule==3){
+             No = 3
+             Num = "three"
+             Words = "Never be unreachable."}
+        else if(Rule==4){
+             No = 4
+             Num = "four"
+             Words = "The best way to keep a secret? Keep it to yourself. Second best? Tell one other person – if you must. There is no third best."}
+        else if(Rule==5){
+             No = 5
+             Num = "five"
+             Words = "You don't waste good."}
+        else if(Rule==6){
+             No = 6
+             Num = "six"
+             Words = "Never apologize – It’s a sign of weakness. Expect among friends."}
+        else if(Rule==7){
+             No = 7
+             Num = "seven"
+             Words = "Always be specific when you lie."}
+        else if(Rule==8){
+             No = 8
+             Num = "eight"
+             Words = "Never take anything for granted."}
+        else if(Rule==9){
+             No = 9
+             Num = "nine"
+             Words = "Never go anywhere without a knife."}
+        else if(Rule==10){
+             No = 10
+             Num = "ten"
+             Words = "Never get personally involved in a case."}
+        else if(Rule==11){
+             No = 11
+             Num = "eleven"
+             Words = "When the job is done, walk away."}
+        else if(Rule==12){
+             No = 12
+             Num = "twelve"
+             Words = "Never date a co-worker."}
+        else if(Rule==13){
+             No = 13
+             Num = "thriteen"
+             Words = "Never, ever involve a lawyer."}
+        else if(Rule==14){
+             No = 14
+             Num = "fourteen"
+             Words = "Bend the line, don’t break it."}
+        else if(Rule==15){
+             No = 15
+             Num = "fifteen"
+             Words = "Always work as a team."}
+        else if(Rule==16){
+             No = 16
+             Num = "sixteen"
+             Words = "If someone thinks they have the upper-hand…break it!"}
+        else if(Rule==17){
+             No = 18
+             Num = "eighteen"
+             Words = "It’s easier to seek forgiveness than ask permission."}
+        else if(Rule==18){
+             No = 22
+             Num = "twenty two"
+             Words = "Never, ever bother Gibbs in interrogation."}
+        else if(Rule==19){
+             No = 23
+             Num = "twenty three"
+             Words = "Never mess with a Marine’s coffee if you want to live."}
+        else if(Rule==20){
+             No = 27
+             Num = "twenty seven"
+             Words = "Two ways to follow: First way, they never notice you – Second way, they only notice you."}
+        else if(Rule==21){
+             No = 35
+             Num = "thirty five"
+             Words = "Always watch the watchers."}
+        else if(Rule==22){
+             No = 36
+             Num = "thirty six"
+             Words = "If you feel like you’re being played, you probably are."}
+        else if(Rule==23){
+             No = 38
+             Num = "thirty eight"
+             Words = "Your case, your lead."}
+        else if(Rule==24){
+             No = 39
+             Num = "thirty nine"
+             Words = "There is no such thing as coincidence."}
+        else if(Rule==25){
+             No = 40
+             Num = "fourty"
+             Words = "If it seems someone is out to get you, they are."}
+        else if(Rule==26){
+             No = 44
+             Num = "fourty four"
+             Words = "First things first. Hide the women and children."}
+        else if(Rule==27){
+             No = 45
+             Num = "fourty five"
+             Words = "Clean up your own mess."}
+        else if(Rule==28){
+             No = 51
+             Num = "fifty one"
+             Words = "Sometimes - You're Wrong"}
+    if(Qtype==1){
+        box.innerHTML= "What is Rule "+No+"?"}
+    else{box.innerHTML="Which Rule is '"+Words+"'?"} }
+    function MyKeyDownHandler (MyEvent) {
+        if (MyEvent.keyCode == 8) {
+            box.innerHTML= box.innerHTML.slice(0, (box.innerHTML.length)-1) }    }
+    addEventListener("keydown", MyKeyDownHandler);
+    function Restart(){location.reload()}
+        </script>
+    </body>
+</html>
