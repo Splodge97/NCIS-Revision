@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "title.splodge97.edu.mit.scratch"
+        id          = "NCIS-Revision.splodge97.edu.mit.scratch"
         versionCode = "10" 
         version     = "1.0.0" >
-    <name>title</name>
+    <name>NCIS Revision</name>
     <description>
-description
+Learn Gibb's Rules. And remember a slap to the face is an insult – to the back of the head is a wake-up call.
     </description>
     <author href="http://scratch.mit.edu/users/splodge97" email="sophie.rose.cz@gmail.com">
         splodge97
