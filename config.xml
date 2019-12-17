@@ -4,6 +4,14 @@
         id          = "NCIS-Revision.splodge97.edu.mit.scratch"
         versionCode = "10" 
         version     = "1.0.0" >
+       <access origin="*" />
+       <preference name="KeepRunning" value="false" />
+       <preference name="DisallowOverscroll" value="true"/>
+       <preference name="Fullscreen" value="true" />
+       <preference name="SplashScreenDelay" value="3000" />
+       <preference name="loglevel" value="DEBUG" />
+       <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+       <preference name="orientation" value="default"/>
     <name>NCIS Revision</name>
     <description>
 Learn Gibb's Rules. And remember a slap to the face is an insult – to the back of the head is a wake-up call.
